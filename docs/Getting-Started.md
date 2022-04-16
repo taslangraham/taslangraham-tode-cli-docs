@@ -59,7 +59,7 @@ process.env.HOST
 process.env.PORT
 ```
 
-Tode sticks to this style of reading environment variables. However, all environment variables are read in a single location, and made available to the application via a single module, ```env``` exported from ```.env.ts``` found in the root directory of the app.
+Tode sticks to this style of reading environment variables. However, all environment variables are read in a single location, and made available to the application via a single module, ```env```, exported from ```.env.ts``` found in the root directory of the app.
 
 The following is a snippet of the default ```env.ts``` module.
 
