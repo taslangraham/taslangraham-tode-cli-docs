@@ -1,12 +1,8 @@
-<!-- _coverpage.md -->
+<!-- _coverage.md -->
 
-![logo](_media/icon.svg)
-
-# Tode CLI <small></small>
+# Tode CLI
 
 > Quickly create node.js/express APIs.
 
 [GitHub](https://github.com/taslangraham/tode-cli)
-[Get Started](#todecli)
-
-<!-- background color -->
+[Get Started](/Getting-Started.md)

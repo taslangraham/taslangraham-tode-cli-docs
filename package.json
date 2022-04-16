@@ -1,0 +1,22 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "cd docs && docsify serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taslangraham/taslangraham-tode-cli-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taslangraham/taslangraham-tode-cli-docs/issues"
+  },
+  "homepage": "https://github.com/taslangraham/taslangraham-tode-cli-docs#readme"
+}

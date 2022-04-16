@@ -26,6 +26,7 @@ npm install -g tode-cli
 ```
 
 ## Creating a new project
+
 Creating a new project is simple.
 
 ```bash
@@ -45,6 +46,7 @@ npm run dev
 The above command will start the HTTP server. Nodemon is used to start the development server to watch changes to the file system and automatically restart the server.
 
 ## Environment Configuration
+
 A Tode generated project utilizes a single env file to store environment variables that changes between your local and production environment. For example, JWT secret key, database credentials, and so on. You define these variable in a single ```.env``` file.
 
 ### Access environment variables
@@ -59,7 +61,7 @@ process.env.PORT
 
 Tode sticks to this style of reading environment variables. However, all environment variables are read in a single location, and made available to the application via a single module, ```env``` exported from ```.env.ts``` found in the root directory of the app.
 
-The following is an snippet of the default ```env.ts``` module.
+The following is a snippet of the default ```env.ts``` module.
 
 ```javascript
 /**
@@ -101,18 +103,15 @@ export const env = {
   JWT_SECRET: processEnv.JWT_SECRET,
   projectDirectory,
 };
-
-````
+```
 
 ### Using the env module
 
 ```javascript
 // src/example.ts
 
-import { env } from './env
+import { env } from './env'
 
 // Get database port
 const databasePort = env.database.port
 ```
-
-## Directory Structure
