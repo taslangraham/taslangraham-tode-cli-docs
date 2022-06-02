@@ -129,23 +129,36 @@ EXAMPLE
 
 Adds JWT authentication.
 
-```$ tode add:auth```
+`$ tode add:auth`
 
-```
+
+```bash
 USAGE
-  $ tode add:service name
-
-ARGUMENTS
-  name  Name of service to create
+  $ tode add:auth
 
 OPTIONS
   -h, --help  show CLI help
 
 ALIASES
-  $ tode as
+  $ tode aa
+```
 
-EXAMPLE
-  tode add:service <name>
+### Modules generated
+
+Controller - ```controllers/auth```
+
+Model - ```models/user```
+
+Services - ```services/auth```, ```services/user```
+
+Middlewares - ```middlewares/auth```
+
+### **Execute migration**
+
+The necessary migration file to create a Users table in the database is also generated. Run the following command to create the Users table.
+
+```bash
+knex migrate:latest
 ```
 
 ## Help Command
